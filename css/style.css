@@ -1,0 +1,591 @@
+body {
+    background: #ffffff;
+}
+.toltip {
+    position: absolute;
+    z-index: 500;
+    background-color: rgba(0, 0, 0, .6);
+    box-shadow: 0 0 0 2px #2B190E, 0 0 0 6px rgba(0, 0, 0, .6);
+    padding: .5rem;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 0.875em;
+    max-width: 170px;
+    border-radius: 2px;
+    top: 0;
+    left: 0;
+}
+.btn-Todasmudas {
+    display: block;
+    margin: 60px auto;
+    background: #2B190E;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.875em;
+    line-height: 20px;
+    letter-spacing: .1em;
+    border-radius: 5px;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.img-clientes {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #000;
+}
+.img-clientes:hover {
+    transition: .3s;
+    transform: scale(1.2);
+}
+.img-produtos {
+    max-width: 100%;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #000;
+    object-fit: cover;
+}
+.img-produtos:hover {
+    transition: .3s;
+    transform: scale(1.2);
+}
+body {
+    font-family: 'Montserrat', monospace;
+}
+.subtitulo {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center; 
+    line-height: 1.4em;
+    letter-spacing: .1em;
+}
+h2:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #2B190E;
+    margin: 10px auto 10px;
+}
+.btn {
+    background: none;
+    padding: 10px 30px;
+    border: 3px solid #2B190E;
+    color: #2B190E;
+    font-weight: 700;
+    font-size: 1.125em;
+    line-height: 20px;
+    letter-spacing: .1em;
+    border-radius: 20px;
+}
+.btn:hover {
+    background: #2B190E;
+    color: #fff;
+    transition: .3s;
+}
+.header nav ul li a.active {
+    color: #ECE5CD;
+}
+.header nav ul li a.active:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #ECE5CD;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+@media (max-width: 739px) {
+    .header nav ul li a.active {
+        color: #ECE5CD;
+    }
+    .header nav ul li a.active:after {
+        content: "";
+        display: block;
+        width: 0px;
+        height: 0px;
+        background: #ECE5CD;
+        margin: 0 auto;
+        margin-top: 0px;
+    }
+}
+
+.introducao-pag {
+    margin-top: 105px;
+    background: #ECE5CD;
+    padding: 40px;
+}
+.introducao-pag  p {
+    text-align: center;
+    font-size: 1.125em;
+}
+.introducao-pag h1 {
+    margin: 0 auto 40px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.4em;
+    font-weight: bold;
+    color: #2B190E;
+}
+.introducao-pag h1::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+    background: #2B190E;
+}
+
+
+@media (max-width: 739px) {
+    .introducao-pag {
+        margin-top: 0px;
+    }
+    .introducao-pag h1 {
+        margin: 0 auto 40px;
+        font-size: 3em;
+    }
+}
+
+
+/* HEADER */
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #2B190E; /* MARROM */
+	padding: 15px 0;
+	z-index: 10;
+}
+.header img {
+    width: 150px;
+    height: 75px;
+}
+.header-menu {
+	text-align: right;
+}
+
+.header-menu ul li {
+	display: inline-block;
+	margin-left: 25px;
+	margin-top: 30px;
+}
+
+.header-menu ul li a {
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 0.875em;
+	line-height: 20px;
+	padding: 10px 0;
+}
+.header-menu ul li a:hover {
+    color: #ECE5CD;
+    transition: .3s;
+}
+
+
+@media (max-width: 739px) {
+    .header {
+        position: relative;
+    }
+    .header img {
+        margin: 0 auto 20px auto;
+    }
+    .header-menu {
+        text-align: center;
+    }
+    .header-menu ul li {
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-right: 0px;
+    } 
+    .header-menu ul li a {
+        border: 2px solid #fff;
+        width: 136px;
+        display: inline-block;
+        float: left;
+    }
+    .header-menu ul li a:hover {
+        border-color: #ECE5CD;
+    }
+
+}
+
+/* INTRODUCAO */
+.introducao {
+    margin-top: 105px;
+    background: #ECE5CD;
+    padding: 40px;
+}
+.introducao h1 {
+    margin: 0 auto 40px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.4em;
+    font-weight: bold;
+    max-width: 100%;
+    width: 800px;
+}
+.frase {
+    margin: 0 auto;
+    max-width: 320px;
+    margin-bottom: 40px;
+    color: #000;
+    text-align: center;
+}
+.frase p {
+    line-height: 1.5em;
+    font-size: 14px;
+    font-style: italic;
+}
+.frase p:after, .frase p::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #2B190E;
+    margin: 10px auto 10px;
+}
+
+@media (max-width: 739px) {
+    .introducao {
+        margin-top: 0px;
+        padding: 20px 0;
+    }
+    .introducao h1 {
+        margin: 0 auto 20px;
+        font-size: 2em;
+        text-align: center;
+        line-height: 1.4em;
+        font-weight: bold;
+        width: 100%;
+    }
+}
+
+/* PRODUTOS */
+.produtos h2 {
+    margin-bottom: 60px;
+}
+.produtos {
+    padding-top: 60px;
+    margin-top: -20px;
+}
+.imagens-produtos > div {
+    margin-bottom: 20px;
+}
+
+.imagens-produtos > div span {
+    background: #3F7E64;
+	padding: 10px 15px;
+	font-size: 0.875em;
+	font-weight: bold;
+	position: relative;
+    top: -10px;
+    text-align: center;
+    color: #fff;
+}
+.call {
+	padding-top: 40px;
+	text-align: center;
+    clear: both;
+    font-size: 0.875em;
+}
+.espaco {
+    margin-bottom: 60px;
+}
+
+.call p{
+	margin-bottom: 20px;
+}
+
+@media (max-width: 739px) {
+    .imagens-produtos > div {
+        margin-bottom: 40px;
+    }
+}
+
+/* SERVICOS */
+.servicos {
+    background: #ECE5CD;
+    padding: 60px 0;
+    text-align: center;
+}
+.servicos h2{
+    margin-bottom: 60px;
+}
+
+.servicos-items h3 {
+    font-size: 1.125em;
+    font-weight: bold;
+    letter-spacing: .1em;
+    line-height: 1.4em;
+    margin: 10px;
+}
+.servicos-items p {
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 739px) {
+    .servicos-items h3 {
+        margin-top: 20px;
+    }
+    .servicos-items p {
+        margin: 0px auto 40px;
+    }
+    .servicos-items {
+        border-bottom: 1px solid #a19b97;
+        margin-bottom: 40px;
+    }
+}
+
+/* EMRPESA */
+.info-empresa {
+    padding: 60px 0;
+}
+.info-empresa h2{
+    padding-bottom: 40px;
+}
+.empresa-items p{
+    font-size: 2em;
+    font-style: normal;
+    font-family: sans-serif;
+}
+
+@media (max-width: 739px) {
+    .empresa-items img {
+        width: 100%;
+    }
+    .empresa-items p {
+        padding: 10px 10px;
+        box-sizing: border-box;
+        border-right: 2px solid #2B190E;
+        border-left: 2px solid #2B190E;
+        font-size: 1.125em;
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+/* DICAS */
+.dicas {
+    padding: 60px 0;
+    background: #ECE5CD;
+}
+.dicas h2 {
+    padding-bottom: 40px;
+}
+.dicas-img img{
+    margin: 0 auto;
+    height: 300px;
+}
+.dicas-img p {
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+    max-width: 250px;
+    width: 240px;
+    text-align: center;
+}
+
+@media (max-width: 739px) {
+    .dicas-img p {
+        margin-bottom: 40px;
+    } 
+}
+
+/*FOOTER CONTATO*/
+
+.footer-contato {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.bege {
+    background: #ECE5CD;
+}
+
+.footer-contato img {
+    width: 250px;
+    height: 175px;
+    margin: 0 auto;
+}
+.footer-contato p {
+    margin: 30px 0;
+}
+.btn-footer {
+    background: #2B190E;
+    padding: 10px 30px;
+    border: 3px solid #2B190E;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.875em;
+    line-height: 20px;
+    letter-spacing: .1em;
+}
+.btn-footer:hover  {
+    transition: .3s;
+    background: #34af23;
+}
+
+/* footer */
+.footer {
+    background: #2B190E;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+
+
+/* PAGINA SOBRE */
+.sobre {
+    margin-top: 60px;
+}
+
+.empresa-info img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.empresa-info p {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 65px;
+    font-size: 1em;
+    line-height: 22px;
+}
+
+@media (max-width: 739px) {
+    .empresa-info p {
+        margin-left: 0px;
+    }
+}
+
+
+/* PAGINA PRODUTOS */
+.subtitulo-produtos {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* PAGINA SERVIÇOS */
+.servicos-pag {
+    padding: 60px 0;
+}
+
+.servicos-pag  p {
+    text-align: center;
+    width: 200px;
+    margin: 0 auto 60px auto;
+}
+.servicos-pag h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}  
+
+/* PAGINA CONTATO */
+.contato {
+    padding: 60px 0;
+}
+.telefone {
+    display: block;
+    margin: 0 auto;
+}
+.contato h3 {
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: .1em;
+    line-height: 1.4em;
+    margin-top: 60px;
+}
+.contato {
+    margin: 0 auto;
+}
+.contato p {
+    font-size: 1.125em;
+    padding: 10px 0;
+    font-style: normal;
+}
+.botao-contato h3 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.img-contato {
+    margin: 0 auto 60px;
+    border-radius: 20px;
+}
+.contato > div {
+    margin: 0 auto;
+    max-width: 800px;
+}
+.botao-contato a {
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+}
+@media (min-width: 749px) and (max-width: 960px){
+    
+
+}
+
+@media (max-width: 739px) {
+    .contato {
+        text-align: center;
+        padding: 20px;
+    }
+    .contato h3 {
+        margin-top: 20px;
+    }
+    .botao-contato a {
+        margin: 40px auto;
+    }
+
+}
+
+/* ACCORDION */
+
+.btn-Todasmudas:after {
+    content: '⬎';
+    margin-left: 10px;
+}
+
+.btn-Todasmudas.ativo::after {
+    content: '⬏';
+}
+
+[data-anime="accordion"] {
+    display: none;
+}
+
+[data-anime="accordion"].ativo {
+    display: block;
+    animation: slideDown .3s forwards;
+}
+@keyframes slideDown {
+    from {
+        transform: translate3d(-10px, 0, 0);
+        transition: .3s;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
