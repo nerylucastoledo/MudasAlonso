@@ -18,7 +18,7 @@ body {
 }
 .btn-Todasmudas {
     display: block;
-    margin: 60px auto;
+    margin: 0 auto 60px auto;
     background: #2B190E;
     padding: 10px 20px;
     border: none;
@@ -28,6 +28,7 @@ body {
     line-height: 20px;
     letter-spacing: .1em;
     border-radius: 5px;
+    cursor: pointer;
 }
 img {
     display: block;
@@ -311,6 +312,9 @@ h2:after {
     font-style: normal;
     font-family: sans-serif;
 }
+.empresa-items img {
+    border-radius: 20px;
+}
 
 @media (max-width: 739px) {
     .empresa-items img {
@@ -542,9 +546,6 @@ h2:after {
     background-color: #555;
 }
 
-.btn-Todasmudas {
-    cursor: pointer;
-}
 .btn-Todasmudas:after {
     content: '⬎';
     margin-left: 10px;
