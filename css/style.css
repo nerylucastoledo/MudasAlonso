@@ -96,7 +96,7 @@ h2:after {
 @media (max-width: 739px) {
     .header nav ul li a.active {
         color: #ECE5CD;
-        background-color: #3F7E64;
+        background-color: #768c27;
     }
     .header nav ul li a.active:after {
         content: "";
