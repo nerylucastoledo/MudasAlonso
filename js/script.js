@@ -36,12 +36,23 @@ initTolTip()
 function initAccordion() {
     const accordion = document.querySelector('[data-anime="accordion"]')
     const botaoAbri = document.querySelector('.btn-Todasmudas')
+    const botaoFechar = document.getElementById('botaoVoltar')
 
     function activeAccordion() {
         accordion.classList.toggle('ativo')
         botaoAbri.classList.toggle('ativo')
+        botaoFechar.classList.toggle('ativo')
     }
 
     botaoAbri.addEventListener('click', activeAccordion)
+
+    function fecharTodasMudas() {
+        accordion.classList.remove('ativo')
+        botaoAbri.classList.remove('ativo')
+        botaoFechar.classList.remove('ativo')
+    }
+
+    botaoFechar.addEventListener('click', fecharTodasMudas)
+
 }
 initAccordion()

@@ -33,18 +33,7 @@ img {
     display: block;
     max-width: 100%;
 }
-.img-clientes {
-    max-width: 100%;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 0 5px #000;
-}
-.img-clientes:hover {
-    transition: .3s;
-    transform: scale(1.2);
-}
+
 .img-produtos {
     max-width: 100%;
     width: 300px;
@@ -309,48 +298,6 @@ h2:after {
 	margin-bottom: 20px;
 }
 
-@media (max-width: 739px) {
-    .imagens-produtos > div {
-        margin-bottom: 40px;
-    }
-}
-
-/* SERVICOS */
-.servicos {
-    background: #ECE5CD;
-    padding: 60px 0;
-    text-align: center;
-}
-.servicos h2{
-    margin-bottom: 60px;
-}
-
-.servicos-items h3 {
-    font-size: 1.125em;
-    font-weight: bold;
-    letter-spacing: .1em;
-    line-height: 1.4em;
-    margin: 10px;
-}
-.servicos-items p {
-    text-align: center;
-    width: 200px;
-    margin: 0 auto;
-}
-
-@media (max-width: 739px) {
-    .servicos-items h3 {
-        margin-top: 20px;
-    }
-    .servicos-items p {
-        margin: 0px auto 40px;
-    }
-    .servicos-items {
-        border-bottom: 1px solid #a19b97;
-        margin-bottom: 40px;
-    }
-}
-
 /* EMRPESA */
 .info-empresa {
     padding: 60px 0;
@@ -384,7 +331,6 @@ h2:after {
 /* DICAS */
 .dicas {
     padding: 60px 0;
-    background: #ECE5CD;
 }
 .dicas h2 {
     padding-bottom: 40px;
@@ -449,6 +395,11 @@ h2:after {
     padding: 20px 0;
 }
 
+@media (max-width: 739px) {
+    .footer-contato h2 {
+        margin-top: 60px;
+    }
+}
 
 
 /* PAGINA SOBRE */
@@ -563,6 +514,36 @@ h2:after {
 
 /* ACCORDION */
 
+#botaoVoltar {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 9999;
+    display: none;
+    background: #2B190E;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.875em;
+    line-height: 20px;
+    letter-spacing: .1em;
+    border-radius: 20px;
+}
+#botaoVoltar.ativo {
+    display: block;
+}
+#botaoVoltar::after {
+    content: 'X';
+    margin-left: 10px;
+}
+#botaoVoltar:hover {
+    background-color: #555;
+}
+
+.btn-Todasmudas {
+    cursor: pointer;
+}
 .btn-Todasmudas:after {
     content: '⬎';
     margin-left: 10px;
@@ -587,5 +568,11 @@ h2:after {
     }
     to {
         transform: translate3d(0, 0, 0);
+    }
+}
+
+@media (max-width: 739px) {
+    .img-produtos:hover {
+        transform: none;
     }
 }
